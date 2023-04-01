@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+
+    <!-- Font Icon -->
+    
+    <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Signup</h2>
+                        <form action="" method="POST"  class="register-form" id="register-form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                {{form.name}}
+                                                                       
+                            </div>
+                            <div class="form-group">
+                                <label for="matid"><i class="zmdi zmdi-account-box"></i></label>
+                                {{form.matid}}
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="zmdi zmdi-phone"></i></label>
+                                {{form.phone}}
+                            </div>
+                            <div class="form-group">
+                                <label for="Semester"><i class="zmdi zmdi-star"></i></label>
+                                {{form.semester}}
+                            </div>
+                            <div class="form-group">
+                                <label for="Cf"><i class="zmdi zmdi-code"></i></label>
+                                {{form.Cf}}
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                {{form.email}}
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                {{form.pasw}}
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="{% static 'signup/images/signup-image.jpg' %}" alt="sing up image"></figure>
+                        <a href="{%url 'login' %}" class="signup-image-link">I am already a member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+    <!-- JS -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+
+    var form_fields = document.getElementsByTagName('input')
+    form_fields[1].placeholder='Your Name';
+    form_fields[2].placeholder='Your ID';
+    form_fields[3].placeholder='Phone';
+    form_fields[4].placeholder='Semester';
+    form_fields[5].placeholder='Codeforces Handle Link';
+    form_fields[6].placeholder='Email';
+    form_fields[7].placeholder='Password';
+
+
+    for (var field in form_fields){	
+    form_fields[field].className += ' form-control'
+    }
+    </script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="icon" href="https://banner2.cleanpng.com/20180614/btw/kisspng-computer-icons-computing-platform-computer-softwar-infrastructure-as-a-service-5b221f9b717fb8.3496164315289629714649.jpg",type="image/png">
+</head>
+<body>
+
+    <!-- navigation section -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">CP-Cell</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="#">Courses</a>
+            <a class="mr-5 hover:text-gray-900" href="{% url 'profile' profile.id %}">Profile</a>
+            <a class="mr-5 hover:text-gray-900" href="{% url 'addvideo' profile.id %}">Add Videos </Video></a>
+            <a class="mr-5 hover:text-gray-900" href="#l2">Team</a>
+          </nav>
+          <a href="{% url 'logout' %}" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style="background-color: rgb(113, 52, 228); color:white"> Logout
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+
+
+
+    <!-- course section -->
+    <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        
+        <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Your Vision Becomes Your Mission</h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">The more work you put in, and the more you constantly and consistently give good performances against good opponents and constantly exceed people's expectations, the more you really endear yourself to the crowd. That's how your career takes off - it's just consistency and time.</p>
+        </div>
+        
+        
+        <div class="flex flex-wrap -m-4">
+            <!-- one block start -->
+            <div id="l1" class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://repository-images.githubusercontent.com/302853672/c4fa2000-1d39-11eb-874c-6cee45b8a674" alt="content">
+                  <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                  <a href="{% url 'live' profile.id %}" class="text-lg text-gray-900 font-medium title-font mb-4">Live Contests</a>
+                  <p class="leading-relaxed text-base">Tutorials For Codeforces/Atcoder/Codechef Contests</p>
+              </div>
+              </div>
+
+
+            <div id="l1" class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://st2.depositphotos.com/3580719/9493/v/950/depositphotos_94938908-stock-illustration-seamless-background-with-formulas-and.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'mathematics' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Mathematics</a>
+                <p class="leading-relaxed text-base">Pure mathematics is in its way, the poetry of logical ideas.</p>
+            </div>
+            </div>
+            <!-- one block end -->
+
+
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://thumbs.dreamstime.com/b/implementation-line-icon-vector-isolated-white-background-eps-204649419.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'implementation' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Implementation</a>
+                <p class="leading-relaxed text-base">Each implementation of human effort, however minute the overall result may be, is summed up in the gesture of the sower.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://c.stocksy.com/a/0OLA00/z9/2465492.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'string' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">String</a>
+                <p class="leading-relaxed text-base">String is the discovery which connects the dots between the untoched.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://cdn3.vectorstock.com/i/1000x1000/10/57/stickman-looking-through-a-telescope-vector-23641057.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'searching' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Searching-Sorting</a>
+                <p class="leading-relaxed text-base">What we seek is some kind of compensation for what we put up with.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3g5AbMHpGYPtVyYifG02SR9YCHXhJWw0GNSFWc_oKvt9qub1eONsDjJanqvPX4bK1D1g&usqp=CAU" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <!-- <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Graph</h2> -->
+                <a href="{% url 'graph' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Graph</a>
+                <p class="leading-relaxed text-base">It's the connection between disconnected, where we find the oneness.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://qph.fs.quoracdn.net/main-qimg-d034cbd7ec08351d301f7d4841d776c6" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'dynamic_programming' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Dynamic Programming</a>
+                <p class="leading-relaxed text-base">We cannot see the whole, it's the wisdom that we are the whole, so dynamically just start, the whole will automatically create.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://en.pimg.jp/032/544/311/1/32544311.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'geometry' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Geometry</a>
+                <p class="leading-relaxed text-base">The two elements the traveler first captures in the big city are extra human architecture and furious rhythm. Geometry and anguish.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/png;base64,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" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'algorithm' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Algorithm</a>
+                <p class="leading-relaxed text-base">One becomes the habit of unknown by following the observing the algorithm.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://us.123rf.com/450wm/oksanaoo/oksanaoo1707/oksanaoo170700155/82234165-imagen-vectorial-de-una-estructura-de-%C3%A1rbol-de-elementos-esquema-negro-sobre-fondo-blanco-.jpg?ver=6" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'data_structure' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Data Structure</a>
+                <p class="leading-relaxed text-base">The standpoint or the viewpoint is the structure of a body, which creates now and then.</p>
+            </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://thumbs.dreamstime.com/b/miscellaneous-red-rubber-stamp-white-background-grunge-rectangular-seal-text-ink-texture-splatter-blots-vector-101039912.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <a href="{% url 'miscellaneous' profile.id%}" class="text-lg text-gray-900 font-medium title-font mb-4">Miscellaneous</a>
+                <p class="leading-relaxed text-base">Everthing is within you, in fact you are the everything, which you thought is just the standpoint.</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- team section -->
+    <section id="l2" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          
+          
+          <div class="flex flex-wrap -m-4">
+
+            <!-- one block start -->
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t39.30808-6/258746129_1954420041396209_1948695017312847646_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGF6fckQCm8UEF7aQ-fSgME4djQf3dmCD_h2NB_d2YIP09ews3qhCnDy7fCzt33ciAJkgzZpDjD4FgUhigMOb27&_nc_ohc=7CujNkXkVL8AX-XJaU-&_nc_oc=AQnEyM8wpU3n5uNB3LFT4eXtOZx7U033EarYVXfwuduqlZ1n-9psScoBEqctsiNO3LQ&_nc_ht=scontent.fcgp3-1.fna&oh=00_AT9lWueFSL5sbCjetH-Q7kPoj7klAFoRV_ffivEHMo3AXw&oe=61CDED84">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Shahiduzzaman Fahad</h2>
+                  <h3 class="text-gray-500 mb-3">Founder, Algorithmist</h3>
+                  <p class="mb-4">Pack the bag, run to a purpose.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- one block end -->
+
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t39.30808-6/p180x540/266542302_1827170667474015_5077527343607701546_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFWrk-STFuJa5shESpQsTXHTOUOrmDgzdBM5Q6uYODN0AVATdVWwJdusID8Fcc8vAuv1fvWPE-vaFmVdUvxPkZg&_nc_ohc=e63MRshj-bMAX_o0zZz&_nc_ht=scontent.fcgp3-1.fna&oh=00_AT-vsfhU1GVzgkGVmbmaBeQYQeDmDd8S4kh30fKXbjiigA&oe=61CD1CB8">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Projnajit Barua</h2>
+                  <h3 class="text-gray-500 mb-3">Founder, Executor</h3>
+                  <p class="mb-4">Outcome is unsustainable, so love the process of doing.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t39.30808-6/269744372_3057616341143525_986374899591290596_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpDskqvTtKumKMuEv3mjBJj5VUur8REEqPlVS6vxEQSkNue7M-UHMexYmNYx5mqqYuyZLK_JkH2fTw3OZNz5gk&_nc_ohc=bGoT8QRKL6MAX_jj5KH&tn=UcQOcmoP5uMmEGDs&_nc_ht=scontent.fcgp3-1.fna&oh=00_AT9cZm4eF3R2NDrffelGBCVXrogbsPs7G870iogbOFT_5A&oe=61CCDFBB">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Sajeed Al Reefy</h2>
+                  <h3 class="text-gray-500 mb-3">Competitive Photographer</h3>
+                  <p class="mb-4">A tech enthusiastic eager to learn more and more about Coding and Algorithm.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t1.6435-9/59106140_2308597442744433_7256897320233467904_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeH19akpYL_LPQnno6TEmMNEsO8dmB9FGMmw7x2YH0UYyR9wne3Dwntr08Kh6LGE-1efH-EX5bdbZKWhtHYyxGSJ&_nc_ohc=h0uaUwvq2ssAX8LOfm6&_nc_ht=scontent.fcgp3-1.fna&oh=00_AT8ObC5NuJCkzhXaLI48h4CcRhWM_Nbk0sV3A6wExV-Dng&oe=61EEFC8C">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Md Tarek Ashraf</h2>
+                  <h3 class="text-gray-500 mb-3">Management</h3>
+                  <p class="mb-4">Be ready to go, in any situation.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t1.6435-9/64569766_2331035503801103_2071196761010995200_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeF_-DnVOJ7UWW2fGWyB6L4t5komGUAql2PmSiYZQCqXY-PlAR17DZdiz_5SUmPMvIFUlftOHcFNLh_Bkcd99x2k&_nc_ohc=6AfgWLQDyogAX_FUpV3&_nc_ht=scontent.fcgp3-1.fna&oh=00_AT82sEKrTjXrhJcZPs1bMef64O4_35-d1T8FZfzodhpBwQ&oe=61ED9ECA">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Sharia Habib Ula</h2>
+                  <h3 class="text-gray-500 mb-3">Competitive Programmer</h3>
+                  <p class="mb-4">Love to learn new things that are related to computer science & modern technology.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- footer -->
+      <footer id="l3" class="text-gray-600 body-font">
+        <div class="bg-gray-100">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">CP-Cell</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 CpC —
+              <a href="https://www.facebook.com/groups/2848052368746981/?multi_permalinks=3177611865791028%2C3177290785823136%2C3176504915901723&notif_id=1639456169989560&notif_t=group_activity&ref=notif" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@society</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
